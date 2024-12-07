@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vsmfdin"
+version = "1.0.0"
+description = "MFDIN function for VapourSynth"
+readme = "README.md"
+requires-python = ">=3.10"
+license-files = { paths = ["LICENSE"] }
+authors = [
+  { name = "HolyWu", email = "holywu@gmail.com" },
+]
+keywords = [
+  "MFDIN",
+  "PyTorch",
+  "TensorRT",
+  "VapourSynth",
+]
+classifiers = [
+  "Environment :: GPU :: NVIDIA CUDA",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = [
+  "numpy",
+  "torch>=2.5.1",
+  "VapourSynth>=66",
+]
+
+[project.urls]
+Homepage = "https://github.com/HolyWu/vs-mfdin"
+Issues = "https://github.com/HolyWu/vs-mfdin/issues"
