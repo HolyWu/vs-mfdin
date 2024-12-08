@@ -63,9 +63,6 @@ def mfdin(
     if not torch.cuda.is_available():
         raise vs.Error("mfdin: CUDA is not available")
 
-    if os.path.getsize(model_path) == 0:
-        raise vs.Error("mfdin: model files have not been downloaded. run 'python -m vsmfdin' first")
-
     torch.set_float32_matmul_precision("high")
 
     fp16 = clip.format.bits_per_sample == 16
